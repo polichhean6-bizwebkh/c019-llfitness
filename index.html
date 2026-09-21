@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLFitness Phnom Penh | Personal Training, Physiotherapy & Nutrition</title>
+<meta name="description" content="Personal training, physiotherapy, nutrition consultation and structured group training in Phnom Penh, focused on strength, performance and long-term health.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <button class="brand" data-nav="home" aria-label="LLFitness — Home">
+    <img class="brand-logo" src="assets/images/logo-full-white.png" alt="LLFitness — Lorenzo Lanzafame">
+  </button>
+
+  <nav class="main-nav" id="mainNav">
+    <button class="nav-link" data-nav="home">HOME</button>
+    <button class="nav-link" data-nav="about">ABOUT US</button>
+    <button class="nav-link" data-nav="services">SERVICES</button>
+    <button class="nav-link" data-nav="contact">CONTACT</button>
+    <button class="nav-link" data-nav="rewards">REWARDS CIRCLE</button>
+  </nav>
+
+  <div style="display:flex;align-items:center;gap:14px;">
+    <button class="btn-enquire" data-nav="contact">BOOK A CONSULTATION <span class="arrow">→</span></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">MENU</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HOME ================= -->
+<section id="view-home">
+  <div class="home-hero" style="background-image:url('assets/images/home-hero-poster.webp');">
+    <!--
+      Background-image above (home-hero-poster.webp) is the automatic fallback
+      for browsers that block autoplay, save-data mode, or if the video fails
+      to load — the video sits on top of it once it can play, so nothing breaks.
+    -->
+    <video class="home-hero-video" autoplay muted loop playsinline
+           preload="none"
+           poster="assets/images/home-hero-poster.webp">
+      <source src="assets/video/home-hero.mp4" type="video/mp4">
+    </video>
+    <div class="home-hero-inner" data-animate="fade-up">
+      <div class="bar"></div>
+      <span class="home-hero-eyebrow">BEYOND FITNESS</span>
+      <h1>Training for Life.</h1>
+      <button class="btn btn-brown" data-nav="contact">PROGRESS STARTS HERE <span class="arrow">→</span></button>
+    </div>
+  </div>
+
+  <div class="story">
+    <a class="zoom-wrap" data-nav="about" tabindex="-1" data-animate="fade-up">
+      <img class="who-we-are-photo" src="assets/images/who-we-are.webp" alt="Inside the LLFitness studio" loading="lazy">
+    </a>
+    <div data-animate="fade-up">
+      <div class="bar"></div>
+      <h2>Who We Are</h2>
+      <p>We believe longevity isn't just about living longer — it's about staying strong, mobile and capable enough to keep doing the things that matter to you.</p>
+      <p>Training should do more than change how you look. It should improve how you move, feel and live, now and for years to come.</p>
+      <p>That belief has shaped LLFitness from the beginning.</p>
+      <button class="btn btn-outline-black" data-nav="about">MORE ABOUT US <span class="arrow">→</span></button>
+    </div>
+  </div>
+
+  <div class="services-section">
+    <div class="section-head" data-animate="fade-up">
+      <div class="bar bar-center"></div>
+      <h2>OUR CORE SERVICES</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-animate="fade-up">
+        <div class="img-wrap"><img class="crop-pt-core" src="assets/images/svc-personal-training-core.webp" alt="LLFitness personal trainer coaching a client during a workout" loading="lazy"></div>
+        <div class="body"><div class="rule"></div><div class="title">Personal Training</div><div class="text">A fully personalised approach to your fitness, built around your goals, ability and lifestyle. Your training journey begins with a comprehensive fitness assessment to establish your starting point and ensure your training is tailored to your needs and goals.</div></div>
+      </div>
+      <div class="service-card" data-animate="fade-up">
+        <div class="img-wrap"><img src="assets/images/svc-physiotherapy-core.webp" alt="Physiotherapy session at LLFitness" loading="lazy"></div>
+        <div class="body"><div class="rule"></div><div class="title">Physiotherapy</div><div class="text">Focused on identifying and treating the cause of pain, discomfort or movement limitations. Through assessment, hands-on treatment and targeted exercise, we help restore mobility and function.</div></div>
+      </div>
+      <div class="service-card" data-animate="fade-up">
+        <div class="img-wrap"><img src="assets/images/svc-group-training-core.webp" alt="Small group training session with an LLFitness coach" loading="lazy"></div>
+        <div class="body"><div class="rule"></div><div class="title">Structured Group Training</div><div class="text">A progressive programme rather than stand-alone workouts, organised into phases that build strength, improve conditioning and develop power. Small groups capped at six keep coaching personal.</div></div>
+      </div>
+      <div class="service-card" data-animate="fade-up">
+        <div class="img-wrap"><img src="assets/images/svc-sports-massage-core.webp" alt="Sports massage recovery treatment at LLFitness" loading="lazy"></div>
+        <div class="body"><div class="rule"></div><div class="title">Sports Massage Therapy</div><div class="text">A targeted treatment for muscle tension, stiffness and physical fatigue, tailored to the areas that need attention to support recovery and healthy movement.</div></div>
+      </div>
+      <div class="service-card" data-animate="fade-up">
+        <div class="img-wrap"><img src="assets/images/svc-nutrition-consult-core.webp" alt="LLFitness nutrition coach consulting with a client using a tablet" loading="lazy"></div>
+        <div class="body"><div class="rule"></div><div class="title">Nutrition Consultation and Tailored Nutrition Plan</div><div class="text">Practical nutrition guidance tailored to your lifestyle and goals, helping you build sustainable eating habits that can evolve as your needs change.</div></div>
+      </div>
+      <div class="service-card" data-animate="fade-up">
+        <div class="img-wrap"><img class="crop-visbody-core" src="assets/images/svc-visbody-scan-core.webp" alt="Client using the Visbody 3D body composition scanner at LLFitness" loading="lazy"></div>
+        <div class="body"><div class="rule"></div><div class="title">Visbody 3D Body Composition Scan</div><div class="text">A clearer picture of your body in just a few minutes — detailed composition and physical measurements to help establish your starting point and track progress.</div></div>
+      </div>
+    </div>
+    <div class="services-cta">
+      <button class="btn btn-brown" data-nav="services">VIEW SERVICES <span class="arrow">→</span></button>
+    </div>
+  </div>
+
+  <div class="testimonials-section">
+    <div class="section-head" data-animate="fade-up">
+      <div class="bar bar-center"></div>
+      <h2>Client Success Stories</h2>
+      <p class="testimonials-sub">Real experiences from LLFitness clients sharing their training journey, progress and experience.</p>
+    </div>
+    <!--
+      CLIENT STORY CARDS: three independent cards, each pairing a real studio
+      photo (poster/thumbnail) with the client's story text and a "Watch Story"
+      CTA linking out to the actual Instagram post in a new tab. No Instagram
+      embed is used (embeds were producing black/blank thumbnails), so each
+      card always shows a clean, visible image regardless of Instagram's embed
+      availability. To add another story, duplicate one .story-card block.
+    -->
+    <div class="story-grid" data-animate="fade-up">
+      <div class="story-card">
+        <a class="story-card-media" href="https://www.instagram.com/p/DFZctwbJIAO/" target="_blank" rel="noopener" aria-label="Watch Diana's client story on Instagram">
+          <img src="assets/images/story-diana.webp" alt="Diana celebrating in front of the Santiago de Compostela cathedral at the end of her El Camino walk" loading="lazy">
+          <span class="story-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="#ffffff" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="#ffffff"/></svg>
+          </span>
+        </a>
+        <div class="story-card-body">
+          <span class="story-client">Client Spotlight: Diana</span>
+          <h3>From Recovery to Resilience</h3>
+          <p>After a sciatic injury, Diana rebuilt her strength and confidence through focused, personalised training — ultimately preparing her to walk the El Camino solo from Portugal to Spain.</p>
+          <a class="btn btn-outline-black story-watch" href="https://www.instagram.com/p/DFZctwbJIAO/" target="_blank" rel="noopener">Watch Story <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="story-card">
+        <a class="story-card-media" href="https://www.instagram.com/p/DC5xYF8Jz2Z/" target="_blank" rel="noopener" aria-label="Watch Torsten's client story on Instagram">
+          <img src="assets/images/story-torsten.webp" alt="Torsten on the golf course after his training and nutrition progress" loading="lazy">
+          <span class="story-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="#ffffff" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="#ffffff"/></svg>
+          </span>
+        </a>
+        <div class="story-card-body">
+          <span class="story-client">Client Spotlight: Torsten</span>
+          <h3>Stronger Habits, Lasting Results</h3>
+          <p>Through consistent training and better nutrition, Torsten improved his weight, stamina, sleep and posture — helping him feel and perform better both in daily life and on the golf course.</p>
+          <a class="btn btn-outline-black story-watch" href="https://www.instagram.com/p/DC5xYF8Jz2Z/" target="_blank" rel="noopener">Watch Story <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="story-card">
+        <a class="story-card-media" href="https://www.instagram.com/p/DI0UCtTsUlT/" target="_blank" rel="noopener" aria-label="Watch Pierre's client story on Instagram">
+          <img src="assets/images/story-pierre.webp" alt="Pierre road cycling in the mountains at Alpe d'Huez" loading="lazy">
+          <span class="story-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="#ffffff" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="#ffffff"/></svg>
+          </span>
+        </a>
+        <div class="story-card-body">
+          <span class="story-client">Client Spotlight: Pierre</span>
+          <h3>Performance Without Pain</h3>
+          <p>As a competitive cyclist, Pierre trains to improve mobility, posture and overall balance while building the resilience needed to keep riding, racing and performing at the highest level.</p>
+          <a class="btn btn-outline-black story-watch" href="https://www.instagram.com/p/DI0UCtTsUlT/" target="_blank" rel="noopener">Watch Story <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="instagram-section">
+    <div class="section-head" data-animate="fade-up">
+      <div class="bar bar-center"></div>
+      <h2>Follow Us on Social</h2>
+      <p class="instagram-sub">@llfitness.kh</p>
+    </div>
+    <!--
+      Instagram feed placeholder: thumbnails below link out to the LLFitness Instagram
+      profile and use existing site imagery as a static preview. This is intentionally
+      NOT a live/automatic feed for this revision. A future integration (e.g. the
+      Instagram Basic Display / Graph API, or a vetted embed service) could replace
+      the static <a> grid below with dynamically fetched post thumbnails — the markup
+      structure (.instagram-grid > a.instagram-item > img) is designed to support that
+      swap without further layout changes.
+    -->
+    <div class="instagram-grid" data-animate="fade-up">
+      <a class="instagram-item" href="https://www.instagram.com/llfitness.kh" target="_blank" rel="noopener">
+        <img src="assets/images/social-thumb-1.webp" alt="LLFitness on Instagram" loading="lazy">
+      </a>
+      <a class="instagram-item" href="https://www.instagram.com/llfitness.kh" target="_blank" rel="noopener">
+        <img src="assets/images/social-thumb-2.webp" alt="LLFitness on Instagram" loading="lazy">
+      </a>
+      <a class="instagram-item" href="https://www.instagram.com/llfitness.kh" target="_blank" rel="noopener">
+        <img src="assets/images/social-thumb-3.webp" alt="LLFitness on Instagram" loading="lazy">
+      </a>
+      <a class="instagram-item" href="https://www.instagram.com/llfitness.kh" target="_blank" rel="noopener">
+        <img src="assets/images/social-thumb-4.webp" alt="LLFitness on Instagram" loading="lazy">
+      </a>
+      <a class="instagram-item" href="https://www.instagram.com/llfitness.kh" target="_blank" rel="noopener">
+        <img src="assets/images/social-thumb-5.webp" alt="LLFitness on Instagram" loading="lazy">
+      </a>
+      <a class="instagram-item" href="https://www.instagram.com/llfitness.kh" target="_blank" rel="noopener">
+        <img src="assets/images/social-thumb-6.webp" alt="LLFitness on Instagram" loading="lazy">
+      </a>
+    </div>
+    <div class="instagram-cta">
+      <a class="btn btn-outline-black instagram-watch" href="https://www.instagram.com/llfitness.kh" target="_blank" rel="noopener">View on Instagram <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="view-about" class="hidden">
+  <div class="page-hero about-hero" style="background-image:url('assets/images/page-hero-about-v2.webp');">
+    <div class="page-hero-inner" data-animate="fade-up">
+      <div class="bar bar-center"></div>
+      <h1>ABOUT US</h1>
+    </div>
+  </div>
+
+  <div class="about-intro">
+    <a class="zoom-wrap about-intro-img" data-nav="about" tabindex="-1" data-animate="fade-up">
+      <img src="assets/images/about-consultation.webp" alt="Lorenzo Lanzafame at the LLFitness studio" loading="lazy">
+    </a>
+    <div data-animate="fade-up">
+      <div class="bar"></div>
+      <h2>Where It Started</h2>
+      <p class="lede">LLFitness began in 2015, when Lorenzo Lanzafame started working independently as a personal trainer. In 2020, the first LLFitness studio opened, creating a dedicated space for personalised training and professional support.</p>
+      <p class="lede">What started as personal training has since grown into a multidisciplinary training and wellness space, bringing together personal training, structured group training, physiotherapy, sports massage and nutrition under one roof.</p>
+      <p class="lede">Today, LLFitness continues to evolve around the same principle it began with: helping people train with purpose and stay strong, capable and active for life.</p>
+      <div class="signoff">Beyond Fitness. Training for Life.</div>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <div class="section-head" data-animate="fade-up">
+      <div class="bar bar-center"></div>
+      <h2>Meet Our Team Of Professionals</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card" data-animate="fade-up">
+        <div class="avatar-fallback"><img src="assets/images/team-founder.webp" alt="Lorenzo Lanzafame, Founder and Personal Trainer at LLFitness" loading="lazy"></div>
+        <div class="body">
+          <div class="name">Lorenzo Lanzafame</div>
+          <div class="role">Founder &amp; Personal Trainer</div>
+          <div class="qual">YMCA Certified Personal Trainer L3</div>
+          <p class="bio-preview">Lorenzo founded LLFitness on a simple belief: training should be personalised, not generic — built around each client's body, goals and lifestyle.</p>
+          <p class="bio-full">He began working independently as a personal trainer in 2015, and in 2020 opened the first LLFitness studio to create a dedicated space for personalised training and professional support. Lorenzo leads with a hands-on, detail-focused coaching style, combining strength training and structured programming to help clients move better, get stronger, and build habits that last. He continues to train clients directly while overseeing the studio's team and standards, making sure every client gets the same level of care and attention that LLFitness was built on.</p>
+          <button class="read-more-btn" type="button">Read More <span class="arrow">→</span></button>
+        </div>
+      </div>
+      <div class="team-card" data-animate="fade-up">
+        <div class="avatar-fallback"><img src="assets/images/team-nutrition-coach.webp" alt="Renay Paulse, Personal Trainer and Nutrition Coach at LLFitness" loading="lazy"></div>
+        <div class="body">
+          <div class="name">Renay Paulse</div>
+          <div class="role">Personal Trainer &amp; Nutrition Coach</div>
+          <div class="qual">Trifocus Certified Personal Trainer · ACE Nutrition Coach</div>
+          <p class="bio-preview">Renay has come to see fitness as something that evolves with you through different stages of life and it isn't about chasing a "perfect" version of yourself.</p>
+          <p class="bio-full">She combines strength training, weight lifting, body recomposition and nutrition to help clients build an approach they can realistically maintain. As a mother herself, she understands that goals and priorities change—from building muscle or improving fitness to simply having the strength and energy to keep up with everyday life. Renay's approach is supportive, practical, and grounded in longevity, helping clients make training and nutrition a sustainable part of their lifestyle rather than a short-term pursuit.</p>
+          <button class="read-more-btn" type="button">Read More <span class="arrow">→</span></button>
+        </div>
+      </div>
+      <div class="team-card" data-animate="fade-up">
+        <div class="avatar-fallback"><img src="assets/images/team-personal-trainer.webp" alt="Hayati Wahab, Personal Trainer at LLFitness" loading="lazy"></div>
+        <div class="body">
+          <div class="name">Hayati Wahab</div>
+          <div class="role">Personal Trainer</div>
+          <div class="qual">NASM Certified Personal Trainer · Precision Nutrition Level 1</div>
+          <p class="bio-preview">Having started her own fitness journey as a complete beginner, Hayati understands that becoming stronger and healthier doesn't happen overnight.</p>
+          <p class="bio-full">Her approach is built around consistency over perfection, helping clients develop strength, confidence, and habits that fit naturally into everyday life. With a background in psychology, she brings an added understanding of the behaviours and mindset that influence long-term change. Hayati combines strength training, functional movement, and habit-based coaching with a supportive and educational style, helping clients understand the purpose behind their training and feel more confident in what their bodies are capable of.</p>
+          <button class="read-more-btn" type="button">Read More <span class="arrow">→</span></button>
+        </div>
+      </div>
+      <div class="team-card" data-animate="fade-up">
+        <div class="avatar-fallback"><img src="assets/images/team-physiotherapist.webp" alt="Jeppe Brok-Kristensen, Physiotherapist at LLFitness" loading="lazy"></div>
+        <div class="body">
+          <div class="name">Jeppe Brok-Kristensen</div>
+          <div class="role">Physiotherapist</div>
+          <div class="qual">BSc Physiotherapy, Sundheds CVU Aalborg (Denmark)</div>
+          <p class="bio-preview">With 20 years of experience as a physiotherapist, Jeppe brings a broad clinical background from Denmark, having worked in hospitals, neurological rehabilitation, and private practice with athletes.</p>
+          <p class="bio-full">His experience ranges from post-surgical and neurological rehabilitation to sports injuries and back pain, with further training in sports physiotherapy and the McKenzie Method. Jeppe believes good physiotherapy starts with dialogue—understanding what each client wants to get back to and building treatment around that goal. His approach is active and exercise-based, helping clients rebuild strength, movement, and confidence so they can return to their sport, everyday activities, and the things they enjoy doing.</p>
+          <button class="read-more-btn" type="button">Read More <span class="arrow">→</span></button>
+        </div>
+      </div>
+      <div class="team-card" data-animate="fade-up">
+        <div class="avatar-fallback"><img src="assets/images/team-kunkhmer-coach.webp" alt="Sok San, Kun Khmer Coach at LLFitness" loading="lazy"></div>
+        <div class="body">
+          <div class="name">Sok San</div>
+          <div class="role">Kun Khmer Coach</div>
+          <p class="bio-preview">Sok San has grown up with martial arts as a major part of his life, developing his skills under the guidance of experienced Kun Khmer fighter and coach Chan Rothana.</p>
+          <p class="bio-full">Now competing at semi-professional level, he brings his own experience from training and competition into his role as a coach. As he continues to develop both as an athlete and a coach, Sok San is passionate about sharing Kun Khmer with others and helping clients enjoy the discipline, challenge, and energy of the sport.</p>
+          <button class="read-more-btn" type="button">Read More <span class="arrow">→</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="view-services" class="hidden">
+  <div class="page-hero" style="background-image:url('assets/images/page-hero-services.webp');">
+    <div class="page-hero-inner" data-animate="fade-up">
+      <div class="bar bar-center"></div>
+      <h1>SERVICES</h1>
+    </div>
+  </div>
+
+  <!-- PERSONAL TRAINING -->
+  <div class="svc-block" data-animate="fade-up">
+    <div class="svc-block-inner">
+      <div class="svc-intro-row svc-intro-row--portrait">
+        <div class="svc-intro-text">
+          <h2>Personal Training</h2>
+          <p class="svc-block-intro">A personalised approach built around your goals, ability and lifestyle, with tailored programming, professional coaching and measurable progression.</p>
+        </div>
+        <a class="zoom-wrap svc-intro-img" data-nav="services" tabindex="-1">
+          <img src="assets/images/svc-personal-training.webp" alt="LLFitness personal trainer coaching a client during a workout" loading="lazy">
+        </a>
+      </div>
+
+      <div class="sub-service-grid">
+        <div class="sub-service-item">
+          <div class="rule"></div>
+          <h3>Fitness Assessment</h3>
+          <p>Our fitness assessment gives us a clear understanding of your current health, movement and physical capacity before beginning your training programme. It includes a health questionnaire, blood pressure check, Visbody 3D analysis, posture and mobility assessment, followed by cardiovascular, strength and endurance testing during your first training session.</p>
+          <p>The results help our coaches identify your starting point, highlight areas that may need attention and build a training plan that is appropriate, measurable and tailored to your goals.</p>
+        </div>
+        <div class="sub-service-item">
+          <div class="rule"></div>
+          <h3>1-on-1 Personal Training</h3>
+          <p>Individual coaching built entirely around you. Your programme is based on your goals, current ability, training experience and lifestyle, whether you want to become stronger, improve fitness, change your body composition or simply move and feel better. Sessions progress with you, giving you the structure, guidance and accountability needed for consistent long-term progress.</p>
+        </div>
+        <div class="sub-service-item">
+          <div class="rule"></div>
+          <h3>Private Small Group Training</h3>
+          <p>Train together with a partner, friend or small private group while still receiving personalised coaching. Sessions are planned around the different abilities and goals within the group, combining the benefits of personal training with the motivation and shared experience of training together.</p>
+        </div>
+        <div class="sub-service-item">
+          <div class="rule"></div>
+          <h3>Body Recomposition</h3>
+          <p>Personalised training and nutrition support focused on improving body composition in a sustainable way. By building strength, supporting lean muscle and managing body fat, the programme is adapted to your goals, lifestyle and progress over time.</p>
+        </div>
+        <div class="sub-service-item">
+          <div class="rule"></div>
+          <h3>Athlete Strength and Conditioning</h3>
+          <p>Performance-focused training for recreational, developing and competitive athletes. Programmes are designed around the physical demands of your sport, with a focus on strength, power, speed, movement quality and resilience. Training can also be adapted around competition schedules and existing sport-specific practice to support performance while managing overall training load.</p>
+        </div>
+        <div class="sub-service-item">
+          <div class="rule"></div>
+          <h3>Pre and Post Natal Fitness</h3>
+          <p>Personalised training designed to support women through pregnancy and their return to exercise after childbirth. Sessions are adapted according to each stage, with an emphasis on appropriate strength training, breathing, movement quality and maintaining physical capacity. Postnatal training progresses gradually, helping rebuild strength and confidence in movement before returning to more demanding exercise.</p>
+        </div>
+        <div class="sub-service-item">
+          <div class="rule"></div>
+          <h3>Mobility and Functional Movement</h3>
+          <p>Designed for those who feel stiff, restricted or limited in the way they move. We use mobility work alongside strength and movement training to improve range of motion, control and overall movement quality. The goal is not simply to become more flexible, but to help your body move more efficiently for training, sport and everyday life.</p>
+        </div>
+        <div class="sub-service-item">
+          <div class="rule"></div>
+          <h3>Boxing / Kun Khmer</h3>
+          <p>Private Boxing and Kun Khmer training combines technical coaching with physical conditioning. Sessions can include stance, footwork, punches, combinations, defensive skills and pad work, alongside conditioning suited to your level. Whether you are completely new to combat sports or already have experience, training is adapted to develop skill, fitness, coordination and confidence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALTERNATING EDITORIAL SERVICES (Physiotherapy / Sports Massage / Nutrition / Visbody) -->
+  <div class="svc-editorial-wrap">
+    <div class="svc-editorial svc-editorial--portrait" data-animate="fade-up">
+      <a class="zoom-wrap svc-editorial-img" data-nav="services" tabindex="-1">
+        <img src="assets/images/svc-physiotherapy.webp" alt="Physiotherapy session at LLFitness" loading="lazy">
+      </a>
+      <div class="svc-editorial-text">
+        <h2>Physiotherapy</h2>
+        <p>Physiotherapy is designed to help manage pain, restore movement and improve physical function. Following an assessment, treatment may include hands-on therapy, mobility work and targeted rehabilitation exercises based on your individual needs. Whether you are recovering from an injury, managing ongoing discomfort or returning to training, the focus is on helping you move better and reduce the risk of recurring problems.</p>
+      </div>
+    </div>
+
+    <div class="svc-editorial reverse svc-editorial--portrait" data-animate="fade-up">
+      <a class="zoom-wrap svc-editorial-img" data-nav="services" tabindex="-1">
+        <img src="assets/images/svc-sports-massage.webp" alt="Sports massage recovery treatment at LLFitness" loading="lazy">
+      </a>
+      <div class="svc-editorial-text">
+        <h2>Sports Massage Therapy</h2>
+        <p>Sports massage is a targeted treatment for muscle tension, stiffness and physical fatigue. Sessions are tailored to the areas that need attention and can support recovery, improve mobility and help maintain healthy movement. It is suitable not only for athletes, but also for anyone experiencing muscular tightness from training, work or everyday activity.</p>
+      </div>
+    </div>
+
+    <div class="svc-editorial" data-animate="fade-up">
+      <a class="zoom-wrap svc-editorial-img" data-nav="services" tabindex="-1">
+        <img src="assets/images/svc-nutrition-consult.webp" alt="LLFitness nutrition coach consulting with a client using a tablet" loading="lazy">
+      </a>
+      <div class="svc-editorial-text">
+        <h2>Nutrition Consultation and Tailored Nutrition Plan</h2>
+        <p>Our nutrition service provides practical guidance based on your goals, lifestyle and current eating habits. Whether your focus is fat loss, muscle gain, performance or improving overall health, we help you develop a realistic approach to nutrition that can be maintained long term. Tailored nutrition plans can also be adjusted over time as your needs and progress change.</p>
+      </div>
+    </div>
+
+    <div class="svc-editorial reverse" data-animate="fade-up">
+      <a class="zoom-wrap svc-editorial-img" data-nav="services" tabindex="-1">
+        <img src="assets/images/svc-visbody-scan.webp" alt="Client using the Visbody 3D body composition scanner at LLFitness" loading="lazy">
+      </a>
+      <div class="svc-editorial-text">
+        <h2>Visbody 3D Body Composition Scan</h2>
+        <p>The Visbody 3D Body Scan provides a detailed overview of your body composition and physical measurements in just a few minutes. It tracks key data such as body fat, muscle mass, body measurements and posture-related information, giving you a clearer picture of your starting point and progress over time. The scan can be used independently or alongside your training and nutrition programme to support more informed goal setting and progress tracking.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STRUCTURED GROUP TRAINING -->
+  <div class="svc-block on-off" data-animate="fade-up">
+    <div class="svc-block-inner">
+      <div class="svc-intro-row svc-intro-row--stacked">
+        <a class="zoom-wrap svc-intro-img" data-nav="services" tabindex="-1">
+          <img src="assets/images/svc-group-training.webp" alt="Small group training session with an LLFitness coach" loading="lazy">
+        </a>
+        <div class="svc-intro-text">
+          <h2>Structured Group Training</h2>
+          <p class="svc-block-intro">Our Structured Group Training follows progressive 8-week phases focused on Strength, Conditioning and Power. Rather than stand-alone workouts, each phase builds on the last to give your training structure, progression and variety throughout the year. Classes are capped at six participants, allowing our coaches to provide individual guidance while maintaining the energy of training as a group.</p>
+        </div>
+      </div>
+
+      <div class="cycle-progress" aria-hidden="true">
+        <span class="step-dot">01</span>
+        <span class="cycle-line"></span>
+        <span class="step-dot">02</span>
+        <span class="cycle-line"></span>
+        <span class="step-dot">03</span>
+      </div>
+      <div class="cycle-grid">
+        <div class="cycle-card">
+          <div class="phase">Build</div>
+          <p>Build focuses on developing a strong foundation through progressive strength training. We work on movement quality, control and gradually increasing load to build strength, stability and confidence across key movement patterns.</p>
+        </div>
+        <div class="cycle-card">
+          <div class="phase">Condition</div>
+          <p>Condition combines strength training and conditioning work through push, pull and integrated movement patterns to develop endurance, work capacity and sustained performance.</p>
+        </div>
+        <div class="cycle-card">
+          <div class="phase">Perform</div>
+          <p>Perform is about learning to use your strength with speed and purpose. We focus on developing explosive movement, improving how efficiently you produce force, and building your ability to perform with greater athleticism and intent.</p>
+        </div>
+      </div>
+
+      <div class="class-schedule">
+        <div class="section-head" data-animate="fade-up">
+          <div class="bar"></div>
+          <h2>Class Schedule</h2>
+          <p class="class-schedule-sub">View this week's training schedule and book your class.</p>
+        </div>
+        <div class="ptminder-embed" data-animate="fade-up">
+          <div style="overflow: auto; -webkit-overflow-scrolling: touch;">
+            <iframe
+              src="https://ptminder.com/frame/get-class-scheduler?webaddr=llfitnesspasteur"
+              width="100%"
+              height="700px">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT (incl. merged Location) ================= -->
+<section id="view-contact" class="hidden">
+  <div class="page-hero contact-hero" style="background-image:url('assets/images/page-hero-contact.webp');">
+    <div class="page-hero-inner" data-animate="fade-up">
+      <div class="bar bar-center"></div>
+      <h1>CONTACT US</h1>
+    </div>
+  </div>
+
+  <div class="location-block">
+    <div class="location-card" data-animate="fade-up">
+      <div class="info">
+        <div class="loc-name">LLFitness Pasteur</div>
+        <div class="loc-address">#34, Street 222, Phnom Penh</div>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=LLFitness+Pasteur+%2334+Street+222+Phnom+Penh+Cambodia" target="_blank" rel="noopener noreferrer">Open in Google Maps <span class="arrow">→</span></a>
+      </div>
+      <div class="map-embed map-embed--large">
+        <iframe
+          src="https://www.google.com/maps?q=LLFitness+Pasteur%2C+%2334+Street+222%2C+Phnom+Penh%2C+Cambodia&output=embed"
+          width="100%" height="100%" style="border:0;" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="LLFitness Pasteur location on Google Maps"></iframe>
+        <a class="map-embed-overlay" href="https://www.google.com/maps/search/?api=1&query=LLFitness+Pasteur+%2334+Street+222+Phnom+Penh+Cambodia" target="_blank" rel="noopener noreferrer" aria-label="Open LLFitness Pasteur location in Google Maps">
+          <span class="map-embed-chip">Open in Google Maps <span class="arrow">→</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <div class="enquiry-intro" data-animate="fade-up">
+      <div class="bar"></div>
+      <h2>Get In Touch</h2>
+      <p class="enquiry-lede">Reach out to discuss your goals and our team will help you find the right starting point.</p>
+      <div class="contact-details">
+        <div class="row">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg></span>
+          <div><div class="label">PHONE</div><div class="value"><a class="value-link" href="tel:+85581266520">(+855) 81 266 520</a></div></div>
+        </div>
+        <div class="row">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+          <div><div class="label">EMAIL</div><div class="value"><a class="value-link" href="mailto:info@llfitness-kh.com">info@llfitness-kh.com</a></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-wrap" data-animate="fade-up">
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div>
+            <label class="field-label" for="fname">First name <span class="req">*</span></label>
+            <input id="fname" type="text" required>
+          </div>
+          <div>
+            <label class="field-label" for="lname">Last name <span class="req">*</span></label>
+            <input id="lname" type="text" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label class="field-label" for="email">Email address <span class="req">*</span></label>
+            <input id="email" type="email" required>
+          </div>
+          <div>
+            <label class="field-label" for="phone">Phone number <span class="req">*</span></label>
+            <input id="phone" type="tel" required>
+          </div>
+        </div>
+        <div>
+          <label class="field-label" for="service">Service you're interested in</label>
+          <select id="service">
+            <option value="">Select a service</option>
+            <option>Personal Training</option>
+            <option>Structured Group Training</option>
+            <option>Physiotherapy</option>
+            <option>Sports Massage Therapy</option>
+            <option>Nutrition Consultation and Tailored Nutrition Plan</option>
+            <option>Visbody 3D Body Composition Scan</option>
+          </select>
+        </div>
+        <div>
+          <label class="field-label">Preferred contact method <span class="req">*</span></label>
+          <div class="radio-group">
+            <label class="radio-option"><input type="radio" name="contactMethod" value="WhatsApp / Telegram" required> WhatsApp / Telegram</label>
+            <label class="radio-option"><input type="radio" name="contactMethod" value="Phone"> Phone</label>
+            <label class="radio-option"><input type="radio" name="contactMethod" value="Email"> Email</label>
+          </div>
+        </div>
+        <div>
+          <label class="field-label" for="source">How did you learn about us?</label>
+          <input id="source" type="text">
+        </div>
+        <div>
+          <label class="field-label" for="message">Message</label>
+          <textarea id="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">SUBMIT</button>
+      </form>
+      <div class="form-consent">
+        <p>LLFitness commits to respect your personal data and will only use the above information provided for service consultation.</p>
+        <p>By submitting this form, you consent to allow LLFitness to store and process the personal information submitted to provide you the content requested.</p>
+      </div>
+      <div class="form-note" id="formNote"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REWARDS CIRCLE ================= -->
+<section id="view-rewards" class="hidden">
+  <div class="page-hero rewards-hero" style="background-image:url('assets/images/page-hero-rewards.webp');">
+    <div class="page-hero-inner" data-animate="fade-up">
+      <div class="bar bar-center"></div>
+      <h1>LLFITNESS REWARDS CIRCLE</h1>
+    </div>
+  </div>
+
+  <div class="rewards-body" data-animate="fade-up">
+    <div class="section-head">
+      <div class="bar bar-center"></div>
+      <h2>YOUR JOURNEY, REWARDED</h2>
+    </div>
+    <p>Your LLFitness experience doesn't stop here. The Rewards Circle connects you to exclusive benefits and curated offerings from trusted partners and businesses within the LLFitness community.</p>
+
+    <div class="rewards-features">
+      <div class="rewards-feature">
+        <div class="rewards-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+        <h3>Exclusive Benefits</h3>
+      </div>
+      <div class="rewards-feature">
+        <div class="rewards-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="3.2"/><circle cx="18" cy="12" r="3.2"/><path d="M9.2 12h5.6"/></svg></div>
+        <h3>Curated Offerings</h3>
+      </div>
+      <div class="rewards-feature">
+        <div class="rewards-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Member Experiences</h3>
+      </div>
+    </div>
+
+    <span class="coming-soon-badge">Launching Soon</span>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img class="footer-mark" src="assets/images/logo-full-white.png" alt="LLFitness — Lorenzo Lanzafame">
+    <nav class="footer-nav">
+      <button class="nav-link" data-nav="home">HOME</button>
+      <button class="nav-link" data-nav="about">ABOUT US</button>
+      <button class="nav-link" data-nav="services">SERVICES</button>
+      <button class="nav-link" data-nav="contact">CONTACT US</button>
+      <button class="nav-link" data-nav="rewards">REWARDS CIRCLE</button>
+    </nav>
+    <div class="footer-contact">
+      <span>(+855) 81 266 520</span>
+      <span>info@llfitness-kh.com</span>
+    </div>
+    <div class="footer-social">
+      <a class="social-circle-sm" href="https://www.facebook.com/LLFitness.KH" target="_blank" rel="noopener noreferrer" aria-label="LLFitness on Facebook">f</a>
+      <a class="social-circle-sm" href="https://www.instagram.com/llfitness.kh" target="_blank" rel="noopener noreferrer" aria-label="LLFitness on Instagram">IG</a>
+      <a class="social-circle-sm" href="https://kh.linkedin.com/company/llfitness" target="_blank" rel="noopener noreferrer" aria-label="LLFitness on LinkedIn">in</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&#169; 2026 LLFitness. All rights reserved.</div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>
