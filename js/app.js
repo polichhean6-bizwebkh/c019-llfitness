@@ -86,15 +86,95 @@
       : 'Read More <span class="arrow">→</span>';
   });
 
+  /* ---------- Enquiry form: real submission via FormSubmit (AJAX) ----------
+     Static site, no backend — FormSubmit.co relays the POST straight to
+     info@llfitness-kh.com. The destination inbox only needs to click one
+     one-time "activation" link the first time a submission comes through;
+     after that every future submission delivers automatically. */
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@llfitness-kh.com';
+
   var contactForm = document.getElementById('contactForm');
   if (contactForm) {
+    var submitBtn = contactForm.querySelector('.submit-btn');
+    var formNote = document.getElementById('formNote');
+    var submitBtnDefaultText = submitBtn ? submitBtn.textContent : 'SUBMIT';
+    var isSubmitting = false;
+
+    function setNote(message, state) {
+      if (!formNote) return;
+      formNote.textContent = message;
+      formNote.classList.remove('form-note--success', 'form-note--error');
+      if (state) formNote.classList.add('form-note--' + state);
+    }
+
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      var note = document.getElementById('formNote');
-      if (note) {
-        note.textContent = 'Thank you — your enquiry has been received.';
+
+      if (isSubmitting) return; // prevent double submission
+
+      // Required-field validation (native browser validation UI)
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
       }
-      contactForm.reset();
+
+      // Honeypot: real visitors never fill this hidden field. If it's
+      // filled, quietly pretend success without sending anything.
+      var honey = document.getElementById('formHoney');
+      if (honey && honey.value) {
+        contactForm.reset();
+        setNote('Thank you! Your enquiry has been sent successfully. Our team will contact you shortly.', 'success');
+        return;
+      }
+
+      var contactMethodEl = contactForm.querySelector('input[name="contactMethod"]:checked');
+
+      var payload = {
+        'First Name': document.getElementById('fname').value.trim(),
+        'Last Name': document.getElementById('lname').value.trim(),
+        'Email': document.getElementById('email').value.trim(),
+        'Phone': document.getElementById('phone').value.trim(),
+        'Service': document.getElementById('service').value || 'Not specified',
+        'Preferred Contact Method': contactMethodEl ? contactMethodEl.value : 'Not specified',
+        'How They Heard About Us': document.getElementById('source').value.trim() || 'Not specified',
+        'Message': document.getElementById('message').value.trim() || 'Not provided',
+        'Submitted At': new Date().toLocaleString('en-US', { timeZone: 'Asia/Phnom_Penh' }) + ' (Phnom Penh time)',
+        '_subject': 'New Website Enquiry – LL Fitness',
+        '_template': 'table',
+        '_captcha': 'false'
+      };
+
+      isSubmitting = true;
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'SENDING…';
+      }
+      setNote('Sending your enquiry…');
+
+      fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('Request failed with status ' + res.status);
+          return res.json();
+        })
+        .then(function () {
+          setNote('Thank you! Your enquiry has been sent successfully. Our team will contact you shortly.', 'success');
+          contactForm.reset();
+        })
+        .catch(function () {
+          setNote('Sorry, we couldn’t send your enquiry. Please try again or contact us directly.', 'error');
+          // Form is intentionally NOT reset here so the visitor doesn't lose their input.
+        })
+        .finally(function () {
+          isSubmitting = false;
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = submitBtnDefaultText;
+          }
+        });
     });
   }
 

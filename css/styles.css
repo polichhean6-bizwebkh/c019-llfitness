@@ -1053,6 +1053,13 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 500; margin: 0; }
   }
 }
 
+.contact-form .submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 .form-consent {
   font-family: var(--font-body);
   font-weight: 300;
@@ -1072,6 +1079,9 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 500; margin: 0; }
   text-align: center;
   min-height: 16px;
 }
+
+.form-note--success { color: #1a7a3c; }
+.form-note--error { color: #b3261e; }
 
 /* ================= REWARDS CIRCLE ================= */
 .rewards-body {

@@ -512,26 +512,26 @@
         <div class="form-row">
           <div>
             <label class="field-label" for="fname">First name <span class="req">*</span></label>
-            <input id="fname" type="text" required>
+            <input id="fname" name="fname" type="text" required>
           </div>
           <div>
             <label class="field-label" for="lname">Last name <span class="req">*</span></label>
-            <input id="lname" type="text" required>
+            <input id="lname" name="lname" type="text" required>
           </div>
         </div>
         <div class="form-row">
           <div>
             <label class="field-label" for="email">Email address <span class="req">*</span></label>
-            <input id="email" type="email" required>
+            <input id="email" name="email" type="email" required>
           </div>
           <div>
             <label class="field-label" for="phone">Phone number <span class="req">*</span></label>
-            <input id="phone" type="tel" required>
+            <input id="phone" name="phone" type="tel" required>
           </div>
         </div>
         <div>
           <label class="field-label" for="service">Service you're interested in</label>
-          <select id="service">
+          <select id="service" name="service">
             <option value="">Select a service</option>
             <option>Personal Training</option>
             <option>Structured Group Training</option>
@@ -551,12 +551,13 @@
         </div>
         <div>
           <label class="field-label" for="source">How did you learn about us?</label>
-          <input id="source" type="text">
+          <input id="source" name="source" type="text">
         </div>
         <div>
           <label class="field-label" for="message">Message</label>
-          <textarea id="message" rows="4"></textarea>
+          <textarea id="message" name="message" rows="4"></textarea>
         </div>
+        <input type="text" name="_honey" id="formHoney" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button type="submit" class="submit-btn">SUBMIT</button>
       </form>
       <div class="form-consent">
