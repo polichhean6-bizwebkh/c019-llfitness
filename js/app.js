@@ -88,10 +88,10 @@
 
   /* ---------- Enquiry form: real submission via FormSubmit (AJAX) ----------
      Static site, no backend — FormSubmit.co relays the POST straight to
-     info@llfitness-kh.com. The destination inbox only needs to click one
+     llfitnessinfo@gmail.com. The destination inbox only needs to click one
      one-time "activation" link the first time a submission comes through;
      after that every future submission delivers automatically. */
-  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@llfitness-kh.com';
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/llfitnessinfo@gmail.com';
 
   var contactForm = document.getElementById('contactForm');
   if (contactForm) {
